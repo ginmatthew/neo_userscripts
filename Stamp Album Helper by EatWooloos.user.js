@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Stamp album helper - Stamp searcher
 // @namespace    neopets
-// @version      2024.07.13
+// @version      2024.07.15
 // @description  Adds an info menu about your missing stamps
 // @author       Original: EatWooloos / Updated by Hert123
 // @match        *://www.neopets.com/stamps.phtml?type=album&page_id=*
@@ -24,7 +24,7 @@ const owner = location.search.match(/owner=(.+)&*/)?.[1] || appInsightsUserName;
  *  Stamp list shamelessly scraped from Jellyneo item database
  *  (https://items.jellyneo.net/)
  *
- *  Stamp album data last updated 13th of July, 2024 by GM
+ *  Stamp album data last updated 22th of September, 2024 by GM
  *
  ****************************************************************************************/
 
@@ -884,7 +884,7 @@ const STAMP_LIST = {
             { position: 10, name: "Docked Ship Stamp", img: "sta_docked_ship.gif", rarity: "r85" },
             { position: 11, name: "Smugglers Cove Stamp", img: "sta_smugglers_cove.gif", rarity: "r86" },
             { position: 12, name: "Feldon Dinksy Collibridge Stamp", img: "stamp_feldon_dinksy.gif", rarity: "r84" },
-            { position: 13, name: "No Stamp", img: "", rarity: "" },
+            { position: 13, name: "Fred the Tuskaninny Sailor Stamp", img: "sta_tuskaninny_sailor.gif", rarity: "r87" },
             { position: 14, name: "No Stamp", img: "", rarity: "" },
             { position: 15, name: "Dubloon-O-Matic Stamp", img: "stamp_dubloon_o_matic.gif", rarity: "r89" },
             { position: 16, name: "Barf Boat Stamp", img: "sta_ddy21_barf_boat_stamp.gif", rarity: "r101" },
@@ -1056,14 +1056,14 @@ const STAMP_LIST = {
             { position: 2, name: "No Stamp", img: "", rarity: "" },
             { position: 3, name: "No Stamp", img: "", rarity: "" },
             { position: 4, name: "No Stamp", img: "", rarity: "" },
-            { position: 5, name: "No Stamp", img: "", rarity: "" },
+            { position: 5, name: "25th Anniversary Aisha Stamp", img: "stamp_25thanni_aisha.gif", rarity: "r101" },
             { position: 6, name: "No Stamp", img: "", rarity: "" },
             { position: 7, name: "No Stamp", img: "", rarity: "" },
             { position: 8, name: "No Stamp", img: "", rarity: "" },
             { position: 9, name: "No Stamp", img: "", rarity: "" },
             { position: 10, name: "No Stamp", img: "", rarity: "" },
             { position: 11, name: "No Stamp", img: "", rarity: "" },
-            { position: 12, name: "No Stamp", img: "", rarity: "" },
+            { position: 12, name: "25th Anniversary Shoyru Stamp", img: "stamp_25thanni_shoyru.gif", rarity: "r101" },
             { position: 13, name: "Neggnapper Stamp", img: "stamp_neggnapper.gif", rarity: "r101" },
             { position: 14, name: "No Stamp", img: "", rarity: "" },
             { position: 15, name: "No Stamp", img: "", rarity: "" },
@@ -1224,7 +1224,7 @@ const STAMP_LIST = {
             { position: 20, name: "No Stamp", img: "", rarity: "" },
             { position: 21, name: "No Stamp", img: "", rarity: "" },
             { position: 22, name: "No Stamp", img: "", rarity: "" },
-            { position: 23, name: "No Stamp", img: "", rarity: "" },
+            { position: 23, name: "Void Coin", img: "stamp_voidcoin.gif", rarity: "r101" },
             { position: 24, name: "No Stamp", img: "", rarity: "" },
             { position: 25, name: "No Stamp", img: "", rarity: "" }
         ]
@@ -1256,7 +1256,7 @@ const STAMP_LIST = {
             { position: 22, name: "Valentine Stamp", img: "stamp_valentine.gif", rarity: "r101" },
             { position: 23, name: "No Stamp", img: "", rarity: "" },
             { position: 24, name: "No Stamp", img: "", rarity: "" },
-            { position: 25, name: "No Stamp", img: "", rarity: "" }
+            { position: 25, name: "AC XIX Commemorative Stamp", img: "stamp_acxix_comm.gif", rarity: "r101" }
         ]
     },
     "42": {
@@ -1322,7 +1322,7 @@ const STAMP_LIST = {
     "44": {
         "album": "Faerieland II",
         "list": [
-            { position: 1, name: "No Stamp", img: "", rarity: "" },
+            { position: 1, name: "Luxinia Stamp", img: "d3cf0h2ki5.gif", rarity: "r101" },
             { position: 2, name: "No Stamp", img: "", rarity: "" },
             { position: 3, name: "No Stamp", img: "", rarity: "" },
             { position: 4, name: "No Stamp", img: "", rarity: "" },
@@ -1372,7 +1372,7 @@ const STAMP_LIST = {
             { position: 18, name: "No Stamp", img: "", rarity: "" },
             { position: 19, name: "No Stamp", img: "", rarity: "" },
             { position: 20, name: "No Stamp", img: "", rarity: "" },
-            { position: 21, name: "No Stamp", img: "", rarity: "" },
+            { position: 21, name: "Terrible Two Stamp", img: "30nia3mf0d.gif", rarity: "r101" },
             { position: 22, name: "No Stamp", img: "", rarity: "" },
             { position: 23, name: "No Stamp", img: "", rarity: "" },
             { position: 24, name: "No Stamp", img: "", rarity: "" },
@@ -1423,7 +1423,7 @@ const STAMP_LIST = {
             { position: 9, name: "No Stamp", img: "", rarity: "" },
             { position: 10, name: "Council of Leaders Stamp", img: "stamp_councilleaders.gif", rarity: "r101" },
             { position: 11, name: "No Stamp", img: "", rarity: "" },
-            { position: 12, name: "No Stamp", img: "", rarity: "" },
+            { position: 12, name: "Dr. Landelbrot Stamp", img: "df21ljk2le.gif", rarity: "r101" },
             { position: 13, name: "Swirling Void Stamp", img: "stamp_swirlingvoid.gif", rarity: "r101" },
             { position: 14, name: "No Stamp", img: "", rarity: "" },
             { position: 15, name: "No Stamp", img: "", rarity: "" },
